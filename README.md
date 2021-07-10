@@ -2,14 +2,16 @@
 
 ## Краткое описание
 
-10.07.2021 было проведено <перечисление видов тестирование> приложения Credit Card Number Validator.
+10.07.2021 было проведено функциональное модульное тестирование приложения Credit Card Number Validator. Проводилось тестирование новой функциональности - позитивные, негативные сценарии.
 
-На тестирование затрачено: <время в часах>
+На тестирование затрачено: 4 часа
 
 ### В результате тестирования выявлены следующие дефекты:
-* <ссылка на описание дефекта>
-* <ссылка на описание дефекта>
-* <ссылка на описание дефекта>
+* [Номер валидной карты VISA длиной 19 символов не валидируется программой Credit Card Number Validator ](https://github.com/senselessmessinspace/task_1-1_Credit_Card_Number_Validator/issues/1)
+* [Номер валидной карты American Express длиной 15 символов не валидируется программой Credit Card Number Validator](https://github.com/senselessmessinspace/task_1-1_Credit_Card_Number_Validator/issues/2)
+* [Номер невалидной карты длиной 16 символов валидируется программой Credit Card Number Validator](https://github.com/senselessmessinspace/task_1-1_Credit_Card_Number_Validator/issues/3)
+* [Специальные символы длиной 16 символов вызывают ошибку работы программы Credit Card Number Validator](https://github.com/senselessmessinspace/task_1-1_Credit_Card_Number_Validator/issues/4)
+* [Номера карт нестандарной длины не валидируются программой Credit Card Number Validator](https://github.com/senselessmessinspace/task_1-1_Credit_Card_Number_Validator/issues/5)
 
 ## Описание процесса тестирования
 
@@ -69,7 +71,6 @@ MasterCard
 ```
 -123456789012345        "Result is FAIL"
 ```
-
 * Номера длинные и короткие (верные по алгоритму Луна) - пограничные значения
 ```
             Номер карты             Ожидаемый результат
@@ -81,7 +82,6 @@ MasterCard
 19 символов 6458065268079694716     "Result is OK"
 20 символов 25607246479550932530    "Result is FAIL"
 ```
-
 * Пустая строка
 ```
 ""      "Result is FAIL"
